@@ -1,0 +1,18 @@
+.todoContainer {
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+
+.complete {
+    background-color: lightgreen;
+}
+
+.incomplete {
+    background-color: lightcoral;
+}
+
+button{
+    background-color: black;
+    color: wheat;
+}
