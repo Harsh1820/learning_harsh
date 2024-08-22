@@ -1,0 +1,49 @@
+<!-- <h1>Add Product</h1>
+<form [formGroup]="productForm" (ngSubmit)="onSubmit()">
+  <label for="name">Name:</label>
+  <input id="name" formControlName="name" />
+
+  <label for="description">Description:</label>
+  <input id="description" formControlName="description" />
+
+  <label for="price">Price:</label>
+  <input id="price" formControlName="price" />
+
+  <label for="category">Category:</label>
+  <input id="category" formControlName="category" />
+
+  <button type="submit">Add Product</button>
+</form> -->
+
+<h1>Add Product</h1>
+<form [formGroup]="productForm" (ngSubmit)="onSubmit()">
+  <label for="code">Code:</label>
+  <input id="code" formControlName="code" />
+
+  <label for="name">Name:</label>
+  <input id="name" formControlName="name" />
+
+  <label for="excerpt">Excerpt:</label>
+  <input id="excerpt" formControlName="excerpt" />
+
+  <label for="description">Description:</label>
+  <input id="description" formControlName="description" />
+
+  <label for="price">Price:</label>
+  <input id="price" formControlName="price" type="number" />
+
+  <label for="category">Category:</label>
+  <select id="category" formControlName="category">
+    <option *ngFor="let category of categories" [value]="category._id">{{ category.name }}</option>
+  </select>
+
+  <label for="status">Status:</label>
+  <input id="status" formControlName="status" type="checkbox" />
+
+  <button type="submit">Add Product</button>
+
+  <div *ngIf="errorMessage" class="error-message">
+    {{ errorMessage }}
+  </div>
+</form>
+
