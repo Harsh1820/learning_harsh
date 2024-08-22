@@ -1,0 +1,16 @@
+<div class="course-container">
+    <div class="course-box" *ngFor="let course of courses">
+      <div class="course-image">
+        <img *ngIf="course.image" [src]="course.image" alt="{{ course.name }}" />
+      </div>
+      <div class="course-content">
+        <h2>{{ course.name }}</h2>
+        <p [innerHTML]="course.description"></p>
+        <p><strong>Price:</strong> {{ course.price | currency }}</p>
+        <p><strong>Category:</strong> {{ course.category_name }}</p>
+        <p><strong>Credit Cost:</strong> {{ course.credit_cost }}</p>
+        <p *ngIf="course.syllabus"><strong>Syllabus:</strong> {{ course.syllabus | json }}</p>
+      </div>
+    </div>
+  </div>
+  

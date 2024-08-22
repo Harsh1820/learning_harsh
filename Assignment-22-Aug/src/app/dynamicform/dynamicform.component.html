@@ -1,0 +1,15 @@
+<h1>Dynamic Form </h1>
+
+<form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+    <input type="text" name="fullName" placeholder="Your name " formController="fullName" />
+    <input type="text" name="email" placeholder="Your Email " formController="email" />
+    <br />
+    <textarea type="text" name="msg" placeholder="Your Msg " formController="msg"></textarea>
+    <br />
+
+    <input type="submit" value="Send" />
+
+
+
+
+</form>
