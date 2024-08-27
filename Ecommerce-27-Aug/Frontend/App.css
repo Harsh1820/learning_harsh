@@ -1,0 +1,119 @@
+.App {
+  text-align: center;
+  padding: 20px;
+}
+
+.search-bar {
+  margin-bottom: 20px;
+}
+
+.search-bar input, .search-bar select {
+  padding: 10px;
+  margin-right: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.search-bar button {
+  padding: 10px 20px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.search-bar button:hover {
+  background-color: #218838;
+}
+
+.add-product-form {
+  margin-bottom: 20px;
+}
+
+.add-product-form form div {
+  margin-bottom: 10px;
+}
+
+.add-product-form input, .add-product-form select {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.add-product-form button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.add-product-form button:hover {
+  background-color: #0056b3;
+}
+
+.product-list {
+  margin-top: 20px;
+}
+
+.products-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.product-card {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s;
+  width: 250px;
+  text-align: left;
+}
+
+.product-card:hover {
+  transform: scale(1.05);
+}
+
+.product-card h3 {
+  margin-top: 0;
+}
+
+.product-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.product-actions button {
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+}
+
+.product-actions button:hover {
+  background-color: #f1f1f1;
+}
+
+.product-actions button:nth-child(1) {
+  background-color: #dc3545;
+  color: white;
+}
+
+.product-actions button:nth-child(1):hover {
+  background-color: #c82333;
+}
+
+.product-actions button:nth-child(2) {
+  background-color: #007bff;
+  color: white;
+}
+
+.product-actions button:nth-child(2):hover {
+  background-color: #0056b3;
+}
